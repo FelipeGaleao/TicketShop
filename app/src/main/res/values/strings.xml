@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TicketShop</string>
+    <string name="usuario">Nome do usuário</string>
+    <string name="meio">Meio</string>
+    <string name="inteiro">Inteiro</string>
+    <string name="pista">Pista</string>
+    <string name="vip">Área VIP</string>
+</resources>
