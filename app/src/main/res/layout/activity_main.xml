@@ -100,6 +100,9 @@
         android:id="@+id/txt_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/color_third"
+        android:textSize="34sp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

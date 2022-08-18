@@ -42,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                    if(checkedId == R.id.radioVip){
-                        extra = 60.0;
-                    }else{
-                        extra = 0.0;
-                    }
+                if (checkedId == R.id.radioVip) {
+                    extra = 60.0;
+                } else {
+                    extra = 0.0;
+                }
             }
         });
 
@@ -54,31 +54,31 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int item = spinner.getSelectedItemPosition();
-               try{
-                   int qtdMeio = Integer.parseInt(edtMeio.getText().toString());
-                   int qtdInteiro = Integer.parseInt(edtInteiro.getText().toString());
-                   double valor = extra;
+                try {
+                    int qtdMeio = Integer.parseInt(edtMeio.getText().toString());
+                    int qtdInteiro = Integer.parseInt(edtInteiro.getText().toString());
+                    double valor = extra;
 
-                   switch(item){
-                       case 0:
-                           valor = valor+40;
-                           valor = (valor+qtdMeio/2)+(valor+qtdInteiro);
-                       case 1:
-                           valor = valor+50;
-                           valor = (valor+qtdMeio/2)+(valor+qtdInteiro);
-                       case 2:
-                           valor = valor+60;
-                           valor = (valor+qtdMeio/2)+(valor+qtdInteiro);
-                       case 3:
-                           valor = valor+70;
-                           valor = (valor+qtdMeio/2)+(valor+qtdInteiro);
-                   }
+                    switch (item) {
+                        case 0:
+                            valor = valor + 40;
+                            valor = (valor + qtdMeio / 2) + (valor + qtdInteiro);
+                        case 1:
+                            valor = valor + 50;
+                            valor = (valor + qtdMeio / 2) + (valor + qtdInteiro);
+                        case 2:
+                            valor = valor + 60;
+                            valor = (valor + qtdMeio / 2) + (valor + qtdInteiro);
+                        case 3:
+                            valor = valor + 70;
+                            valor = (valor + qtdMeio / 2) + (valor + qtdInteiro);
+                    }
 
-                txtResultado.setText(Double.toString(valor));
+                    txtResultado.setText(Double.toString(valor));
 
-               }catch(Exception e){
+                } catch (Exception e) {
 
-               }
+                }
 
             }
         });
