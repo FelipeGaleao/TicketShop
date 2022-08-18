@@ -1,6 +1,6 @@
 # TicketShop
 
-Aplicativo criado utilizando Android Studio para entender como funciona os recursos Strings e Arrays do Android
+Aplicativo criado utilizando Android Studio para entender como funciona os recursos Strings e Arrays do Android no contexto de uma calculadora do valor de ingressos.
 
 <hr>
 
